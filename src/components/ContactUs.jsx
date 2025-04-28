@@ -13,15 +13,26 @@ export default function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await fetch('https://formspree.io/f/https://formspree.io/f/xjkwkdkd', { 
+      const response = await fetch('https://formspree.io/f/xjkwkdkd', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message
+        })
       });
-      setIsSubmitted(true);
+  
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        throw new Error('Network response was not ok.');
+      }
     } catch (error) {
-      console.error('Error sending message', error);
-      alert('Something went wrong, please try again!');
+      console.error('Error sending message:', error);
+      alert('Something went wrong, please try again.');
     }
   };
 
