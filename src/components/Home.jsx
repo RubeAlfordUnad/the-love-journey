@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
-import logo from '../images/logo-Photoroom.png'; // <-- Import your logo
+import logo from '../images/logo-Photoroom.png';
 
 export default function Home() {
-  const [offsetY, setOffsetY] = useState(0);
+  const [, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
   useEffect(() => {

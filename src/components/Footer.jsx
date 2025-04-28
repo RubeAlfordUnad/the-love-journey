@@ -38,9 +38,9 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-4 text-xl">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaTwitter /></a>
+            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/"><FaInstagram /></a>
+            <a href="https://x.com/"><FaTwitter /></a>
           </div>
         </div>
       </div>
