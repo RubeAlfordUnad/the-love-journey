@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaWhatsapp } from 'react-icons/fa'; // Import WhatsApp icon
 
 export default function ContactUs() {
   const [step, setStep] = useState(1);
