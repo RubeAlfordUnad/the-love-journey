@@ -101,14 +101,14 @@ export default function ContactUs() {
       </div>
 
       {/* WhatsApp Button */}
-      <a
+      {/*<a
         href="https://wa.me/3007818912"  // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg text-white text-3xl flex items-center justify-center hover:bg-green-600 transition duration-300"
       >
         <FaWhatsapp />
-      </a>
+      </a>*/}
     </section>
   );
 }

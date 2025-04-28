@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
-import journeyImage from "../images/logo-Photoroom.png"; // your logo
+import journeyImage from "../images/logo-Photoroom.png";
 
 const steps = [
   {
