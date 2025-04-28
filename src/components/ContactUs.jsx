@@ -10,10 +10,19 @@ export default function ContactUs() {
   const next = () => setStep((s) => Math.min(s + 1, 3));
   const prev = () => setStep((s) => Math.max(s - 1, 1));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(true); // Set submission to true
-    alert('Thank you for reaching out!');
+    try {
+      await fetch('https://formspree.io/f/https://formspree.io/f/xjkwkdkd', { 
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error('Error sending message', error);
+      alert('Something went wrong, please try again!');
+    }
   };
 
   if (isSubmitted) {
