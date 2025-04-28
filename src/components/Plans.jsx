@@ -92,16 +92,15 @@ export default function Plans() {
                 </ul>
 
                 {/* Button */}
-                <motion.button
+                <motion.a
                   whileHover={{ scale: 1.08, backgroundColor: '#f86161' }}
+                  href={plan.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="relative mt-auto py-3 px-6 rounded-full bg-gradient-to-r from-rose-500 via-pink-500 to-red-400 text-white font-semibold shadow-md hover:shadow-xl transition-all duration-300"
-                >
-                  {/* Sparkle Animation */}
-                  <span className="absolute inset-0 flex justify-center items-center">
-                    <span className="w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100 animate-ping"></span>
-                  </span>
+                  >
                   Choose Plan
-                </motion.button>
+                </motion.a>
               </motion.div>
             );
           })}
