@@ -22,11 +22,13 @@ export default function Home() {
     <section className="relative h-screen overflow-hidden font-sans">
       {/* Background Video */}
       <video
-        className="absolute inset-0 w-full h-full object-cover"
-        src="videos/love.mp4"
-        autoPlay
-        loop
-        muted
+          className="absolute inset-0 w-full h-full object-cover"
+          src="videos/love.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
       />
 
       {/* Overlay */}
