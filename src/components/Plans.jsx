@@ -13,6 +13,7 @@ const plans = [
     ],
     recommended: false,
     icon: Heart,
+    link: 'https://buy.stripe.com/test_8wM4j03Xb46X6m4144',
   },
   {
     name: '2 Month Plan',
@@ -25,6 +26,7 @@ const plans = [
     ],
     recommended: true,
     icon: HeartHandshake,
+    link: 'https://buy.stripe.com/test_3cs6r82T7dHx9ygbIJ' 
   },
   {
     name: '3 Month Plan',
@@ -37,6 +39,7 @@ const plans = [
     ],
     recommended: false,
     icon: HeartPulse,
+    link: 'https://buy.stripe.com/test_5kA4j00KZgTJcKs8wy'
   },
 ];
 
